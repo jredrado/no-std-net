@@ -73,7 +73,7 @@ mod de;
 mod ser;
 
 #[cfg(not(feature = "std"))]
-pub use addr::{SocketAddr, SocketAddrV4, SocketAddrV6, ToSocketAddrs};
+pub use addr::{SocketAddr, SocketAddrV4, SocketAddrV6, ToSocketAddrs,ToSocketAddrError};
 #[cfg(all(not(feature = "std"), feature = "unstable_ip"))]
 pub use ip::Ipv6MulticastScope;
 #[cfg(not(feature = "std"))]
